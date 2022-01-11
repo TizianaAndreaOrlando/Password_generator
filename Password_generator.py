@@ -12,11 +12,11 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Building our password with for loop
 
 password = []
-for number in range(nr_letters):
+for number in range(1,nr_letters + 1):
   password.append(random.choice(letters))
-for number in range(nr_symbols):
+for number in range(1,nr_symbols + 1):
   password.append(random.choice(symbols))
-for number in range(nr_numbers):
+for number in range(1,nr_numbers + 1):
   password.append(random.choice(symbols))
 
 #********************   **************   **************
