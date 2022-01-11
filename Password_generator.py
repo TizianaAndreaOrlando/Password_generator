@@ -2,6 +2,7 @@ import random
 from lists import *
 #********************   **************   **************
 #From here we will input our data
+
 print("Welcome to the PyPassword Generator!")
 nr_letters= int(input("How many letters would you like in your password?\n")) 
 nr_symbols = int(input(f"How many symbols would you like?\n"))
@@ -18,7 +19,7 @@ for number in range(nr_symbols):
 for number in range(nr_numbers):
   password.append(random.choice(symbols))
 
-
+#********************   **************   **************
 # We will change the password order to make it safer.
 
 password = random.sample(password,len(password))
